@@ -30,6 +30,10 @@ public class Product {
         return p.getPrice() >= 100.00;
     }
 
+    public boolean nonstaticProductPredicate() {
+        return price >= 100.00;
+    }
+
     @Override
     public String toString() {
         return name + "," + String.format("%.2f", price);
